@@ -153,6 +153,8 @@ function convert.type(all, obj)
 			if mainkey then
 				if fieldtype == "integer" then
 					field.decimal = mainkey
+                elseif fieldtype == "string" then
+                    field.length = tonumber(mainkey)
 				else
 					assert(field.array)
 					field.key = mainkey
@@ -253,7 +255,7 @@ end
 local function parser(text,filename)
 	local state = { file = filename, pos = 0, line = 1 }
 	local r = lpeg.match(proto * -1 + exception , text , 1, state )
-	return flattypename(check_protocol(adjust(r)))
+	return flattypename(check_protocol(adjust(r))), r
 end
 
 --[[
@@ -520,7 +522,7 @@ end
 function sparser.parse(text, name)
 	local r = parser(text, name or "=text")
 	local data = encodeall(r)
-	return data
+	return data, r
 end
 
 return sparser
