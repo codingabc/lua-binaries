@@ -6,10 +6,19 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "liblua", "liblua\liblua.vcxproj", "{E381A24E-65CC-4EFB-93B4-ACDEDBC3F0BB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lua", "lua\lua.vcxproj", "{8B4F1CC0-D1BA-48E1-BB2E-E74F81BABEF4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E381A24E-65CC-4EFB-93B4-ACDEDBC3F0BB} = {E381A24E-65CC-4EFB-93B4-ACDEDBC3F0BB}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lpeg", "lpeg\lpeg.vcxproj", "{E775BF6E-9C39-452A-A557-54C961289385}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E381A24E-65CC-4EFB-93B4-ACDEDBC3F0BB} = {E381A24E-65CC-4EFB-93B4-ACDEDBC3F0BB}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sproto", "sproto\sproto.vcxproj", "{50A9E20B-2556-4DEB-B4F9-B0CFED17B8B9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E381A24E-65CC-4EFB-93B4-ACDEDBC3F0BB} = {E381A24E-65CC-4EFB-93B4-ACDEDBC3F0BB}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
