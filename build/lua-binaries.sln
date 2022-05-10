@@ -20,6 +20,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sproto", "sproto\sproto.vcx
 		{E381A24E-65CC-4EFB-93B4-ACDEDBC3F0BB} = {E381A24E-65CC-4EFB-93B4-ACDEDBC3F0BB}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "luac", "luac\luac.vcxproj", "{134DBBF3-D193-481E-9241-DABBADE07193}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E381A24E-65CC-4EFB-93B4-ACDEDBC3F0BB} = {E381A24E-65CC-4EFB-93B4-ACDEDBC3F0BB}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -60,6 +65,14 @@ Global
 		{50A9E20B-2556-4DEB-B4F9-B0CFED17B8B9}.Release|x64.Build.0 = Release|x64
 		{50A9E20B-2556-4DEB-B4F9-B0CFED17B8B9}.Release|x86.ActiveCfg = Release|Win32
 		{50A9E20B-2556-4DEB-B4F9-B0CFED17B8B9}.Release|x86.Build.0 = Release|Win32
+		{134DBBF3-D193-481E-9241-DABBADE07193}.Debug|x64.ActiveCfg = Debug|x64
+		{134DBBF3-D193-481E-9241-DABBADE07193}.Debug|x64.Build.0 = Debug|x64
+		{134DBBF3-D193-481E-9241-DABBADE07193}.Debug|x86.ActiveCfg = Debug|Win32
+		{134DBBF3-D193-481E-9241-DABBADE07193}.Debug|x86.Build.0 = Debug|Win32
+		{134DBBF3-D193-481E-9241-DABBADE07193}.Release|x64.ActiveCfg = Release|x64
+		{134DBBF3-D193-481E-9241-DABBADE07193}.Release|x64.Build.0 = Release|x64
+		{134DBBF3-D193-481E-9241-DABBADE07193}.Release|x86.ActiveCfg = Release|Win32
+		{134DBBF3-D193-481E-9241-DABBADE07193}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
